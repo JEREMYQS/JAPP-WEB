@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+
+<h1>Programación Web</h1> <!-- Asegúrate de cerrar la etiqueta h1 correctamente -->
+    
+<nav> <!-- Cambiar 'Nav' a 'nav' -->
+    <ul>
+        <li><a href="/Home/">Home</a></li> <!-- Cerrar correctamente las etiquetas <a> -->
+        <li><a href="/Servicios/">Servicios</a></li>
+    </ul>
+</nav>
+
+{% block containt %}   {% endblock %}
+
+</body>
+</html>
