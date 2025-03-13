@@ -9,16 +9,20 @@
 </head>
 <body>
 
-<h1>Programación Web</h1> <!-- Asegúrate de cerrar la etiqueta h1 correctamente -->
+    <img src="{% static 'img/MIFOTO.jpg' %}" alt="" class="mi-foto">
     
-<nav> <!-- Cambiar 'Nav' a 'nav' -->
+<nav> 
+    <img src="{% static 'img/R (6).png' %}" alt="" class="logo">
     <ul>
-        <li><a href="/Home/">Home</a></li> <!-- Cerrar correctamente las etiquetas <a> -->
+        <li><a href="/Home/">Home</a></li> 
         <li><a href="/Servicios/">Servicios</a></li>
     </ul>
 </nav>
 
 {% block containt %}   {% endblock %}
+<footer>
+    <p>@copyringth 2025 ITSR</p>
+</footer>
 
 </body>
 </html>
