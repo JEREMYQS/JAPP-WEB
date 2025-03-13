@@ -1,6 +1,7 @@
-
-{%extends 'encabezado.html' %}
+{% extends 'encabezado.html' %}
+{% load static %}  {# Importante: Asegúrate de tener esto #}
 {% block title %}Home - Mi Sitio{% endblock %}
-{% block containt %}  
-<h1>Jeremy Que soberano</h1>
-{% endblock  %}
+{% block containt %}
+    <img src="{% static 'img/MIFOTO.jpg' %}" alt="Descripción de la foto" class="mi-foto">
+    <h1>Jeremy Que soberano</h1>
+{% endblock %}
