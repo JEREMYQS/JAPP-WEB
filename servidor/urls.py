@@ -19,8 +19,9 @@ from django.urls import path
 from practica1 import views
 
 urlpatterns = [
-    path('', views.Home, name="Home"),
+    path('', views.inicio, name="inicio"),
     path('Home/', views.Home, name="Home"),
     path('admin/', admin.site.urls),
     path('Servicios/', views.Servicios, name="Servicios"),
+    path('inicio/', views.inicio, name="inicio")
 ]

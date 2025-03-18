@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+    
+</head>
+<body>
+    <h1>¡Bienvenido a mi sitio web!</h1>
+    <link rel="stylesheet" href="static/css/estilos.css">
+
+    <form method="post">
+        {% csrf_token %}
+    <fielset>
+         <legend> Inicio de sesión </legend>
+         <table>
+            <tr>
+                <td><label for="usuario">Usuario:</label></td>
+                <td><input type="text" id="usuario" name="usuario"></td>
+            </tr>
+            <tr>
+                <td><label for="Password">Password:</label></td>
+                <td><input type="text" id="password" name="password"></td>
+            </tr>
+            <tr>
+            <td> <button type="button" onclick="location.href='{% url 'Home' %}'">Iniciar Sesión</button></td>
+            </tr>
+            
+
+    </fieldset>
+</form>
+
+    
+         
+
+
+
+</body>
+
+</html>
