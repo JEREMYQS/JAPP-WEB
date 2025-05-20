@@ -1,5 +1,19 @@
-{%extends 'encabezado.html' %}
-{% block title %}Mis servicios{% endblock %}
-{% block containt %}  
-     <h1>Servicios pagina</h1>  
-     {% endblock  %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Mi Sitio</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body class="servicios-page">
+
+    {% include 'navbar.html' %}  {# Incluir el navbar #}
+
+    <footer>
+        <p>@copyright 2025 ITSR</p>
+    </footer>
+
+</body>
+</html>

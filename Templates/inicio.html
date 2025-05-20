@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio de Sesión</title>
+    <title>Registro</title>
     
 </head>
 <body>
-    <h1>¡Bienvenido a mi sitio web!</h1>
+    <h1>¡Bienvenido a mi sitio!</h1>
     <link rel="stylesheet" href="static/css/estilos.css">
 
     <form method="post">
         {% csrf_token %}
-    <fielset>
+    <fieldset>
          <legend> Inicio de sesión </legend>
          <table>
             <tr>
@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td><label for="Password">Password:</label></td>
-                <td><input type="text" id="password" name="password"></td>
+                <td><input type="password" id="password" name="password"></td>
             </tr>
             <tr>
             <td> <button type="button" onclick="location.href='{% url 'Home' %}'">Iniciar Sesión</button></td>

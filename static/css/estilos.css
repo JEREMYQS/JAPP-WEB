@@ -2,6 +2,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -12,7 +15,7 @@ h1 {
 
 
 nav {
-    background-color: #333;
+    
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -22,7 +25,7 @@ nav {
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:left;
     align-items: center;
 }
 
@@ -58,15 +61,22 @@ margin-top: 10%;
 }
 .logo{
     width: 5%;
- margin-right: 70%;
+ margin-right: 0%;
 
 }
 
-form.login-form{
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px auto; /* Centrar el formulario horizontalmente */
+.home-page{
+
+    background-image: url("../img/HOME.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
